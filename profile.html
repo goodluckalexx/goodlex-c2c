@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile form</title>
+	
+	<style>
+		form {
+			width: 50%;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #fff;
+			font-family: Arial, sans-serif;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #007bff;
+		}
+		input[type="text"], input[type="email"], select, textarea {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+		input[type="submit"] {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+		input[type="submit"]:hover {
+			background-color: #007bff;
+		}
+	</style>
+</head>
+<body>
+	<h1><i class="fas fa-user-circle icon"></i></h1>
+	<form>
+		<label for="fullname">Full Name:</label>
+		<input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+		<label for="phone">Phone Number:</label>
+		<input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">Select your gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		<label for="birthdate">Birthdate:</label>
+		<input type="date" id="birthdate" name="birthdate"><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+
